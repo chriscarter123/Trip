@@ -1,6 +1,6 @@
 {
-  "name": "Baht to USD",
-  "short_name": "Baht",
+  "name": "Trip",
+  "short_name": "Trip",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

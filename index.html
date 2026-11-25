@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Baht</title>
+  <title>Trip</title>
   <meta name="theme-color" content="#0f172a">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Baht">
+  <meta name="apple-mobile-web-app-title" content="Trip">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon-192.png">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -16,40 +16,61 @@
 </head>
 <body>
   <main class="app">
-    <h1>Baht → Dollar</h1>
 
-    <section class="converter" id="converter">
-      <label class="field">
-        <span class="code">THB</span>
-        <input id="thb" type="text" inputmode="decimal" autocomplete="off" placeholder="0" aria-label="Thai baht">
-        <span class="symbol">฿</span>
-      </label>
-
-      <button class="swap" id="clear" type="button" aria-label="Clear">Clear</button>
-
-      <label class="field">
-        <span class="code">USD</span>
-        <input id="usd" type="text" inputmode="decimal" autocomplete="off" placeholder="0" aria-label="US dollars">
-        <span class="symbol">$</span>
-      </label>
+    <!-- Today: itinerary, tonight's stay, essentials -->
+    <section class="view" id="view-today">
+      <div id="today"><p class="muted">Loading itinerary…</p></div>
     </section>
 
-    <div class="chips" id="chips" aria-label="Quick amounts in baht"></div>
+    <!-- Money: converter + running total -->
+    <section class="view" id="view-money" hidden>
+      <h1>Baht → Dollar</h1>
 
-    <button class="add" id="add" type="button">+ Add to total</button>
+      <div class="converter" id="converter">
+        <label class="field">
+          <span class="code">THB</span>
+          <input id="thb" type="text" inputmode="decimal" autocomplete="off" placeholder="0" aria-label="Thai baht">
+          <span class="symbol">฿</span>
+        </label>
 
-    <p class="rate" id="rate">Loading rate…</p>
-    <p class="status" id="status"></p>
+        <button class="swap" id="clear" type="button" aria-label="Clear">Clear</button>
 
-    <section class="tally" aria-label="Running total">
-      <div class="tally-head">
-        <h2>Running total</h2>
-        <button class="link" id="tally-clear" type="button" hidden>Clear all</button>
+        <label class="field">
+          <span class="code">USD</span>
+          <input id="usd" type="text" inputmode="decimal" autocomplete="off" placeholder="0" aria-label="US dollars">
+          <span class="symbol">$</span>
+        </label>
       </div>
-      <ol class="tally-list" id="tally-list"></ol>
-      <div class="tally-total" id="tally-total"></div>
+
+      <div class="chips" id="chips" aria-label="Quick amounts in baht"></div>
+
+      <button class="add" id="add" type="button">+ Add to total</button>
+
+      <p class="rate" id="rate">Loading rate…</p>
+      <p class="status" id="status"></p>
+
+      <div class="tally" aria-label="Running total">
+        <div class="tally-head">
+          <h2>Running total</h2>
+          <button class="link" id="tally-clear" type="button" hidden>Clear all</button>
+        </div>
+        <ol class="tally-list" id="tally-list"></ol>
+        <div class="tally-total" id="tally-total"></div>
+      </div>
     </section>
   </main>
+
+  <nav class="tabbar" aria-label="Sections">
+    <a href="#today" data-tab="today"><span class="tab-icon">🗓️</span>Today</a>
+    <a href="#money" data-tab="money"><span class="tab-icon">฿</span>Money</a>
+  </nav>
+
+  <!-- Big address card to show a driver. Tap anywhere to close. -->
+  <dialog class="driver" id="driver">
+    <div class="driver-local" id="driver-local"></div>
+    <div class="driver-en" id="driver-en"></div>
+    <div class="driver-hint">Tap to close</div>
+  </dialog>
 
   <script type="module" src="js/app.js"></script>
 </body>

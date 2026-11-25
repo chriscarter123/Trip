@@ -1,0 +1,61 @@
+{
+  "name": "Thailand (sample – replace with your trip)",
+  "timezone": "Asia/Bangkok",
+
+  "essentials": [
+    { "label": "Tourist Police", "value": "1155", "tel": "1155" },
+    { "label": "Ambulance / Emergency", "value": "1669", "tel": "1669" },
+    { "label": "Police", "value": "191", "tel": "191" },
+    { "label": "US Embassy Bangkok", "value": "+66 2 205 4000", "tel": "+6622054000" },
+    { "label": "Travel insurance", "value": "Policy # ABC-123 (sample)" }
+  ],
+
+  "days": [
+    {
+      "date": "2026-12-01",
+      "title": "Arrive Bangkok",
+      "stay": {
+        "name": "Your Bangkok hotel (sample)",
+        "address": "Sukhumvit Soi 11, Bangkok",
+        "addressLocal": "สุขุมวิท ซอย 11 กรุงเทพฯ",
+        "phone": "+66 2 000 0000",
+        "confirmation": "HTL-0001"
+      },
+      "items": [
+        { "time": "14:30", "title": "Land at BKK", "place": "Suvarnabhumi Airport", "notes": "Flight XX123 · get a SIM at arrivals", "confirmation": "ABC123" },
+        { "time": "16:30", "title": "Check in", "place": "Your Bangkok hotel (sample)" },
+        { "time": "19:00", "title": "Dinner", "place": "Terminal 21 Pier 21 food court", "notes": "Cheap, easy first night" }
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "title": "Old City",
+      "stay": {
+        "name": "Your Bangkok hotel (sample)",
+        "address": "Sukhumvit Soi 11, Bangkok",
+        "addressLocal": "สุขุมวิท ซอย 11 กรุงเทพฯ"
+      },
+      "items": [
+        { "time": "08:30", "title": "Grand Palace", "place": "Grand Palace, Bangkok", "placeLocal": "พระบรมมหาราชวัง", "notes": "Shoulders and knees covered" },
+        { "time": "11:30", "title": "Wat Pho", "place": "Wat Pho, Bangkok", "placeLocal": "วัดโพธิ์" },
+        { "time": "13:00", "title": "Ferry to Wat Arun", "place": "Tha Tien Pier" },
+        { "time": "18:30", "title": "Chinatown street food", "place": "Yaowarat Road, Bangkok", "placeLocal": "ถนนเยาวราช" }
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "title": "Fly to Chiang Mai",
+      "stay": {
+        "name": "Your Chiang Mai hotel (sample)",
+        "address": "Nimmanhaemin Rd, Chiang Mai",
+        "addressLocal": "ถนนนิมมานเหมินท์ เชียงใหม่",
+        "confirmation": "HTL-0002"
+      },
+      "items": [
+        { "time": "09:00", "title": "Leave for airport", "place": "Don Mueang Airport", "notes": "Allow ~1h in traffic" },
+        { "time": "11:15", "title": "Flight DMK → CNX", "notes": "Flight XX456", "confirmation": "DEF456" },
+        { "time": "17:00", "title": "Old City evening walk", "place": "Tha Phae Gate, Chiang Mai", "placeLocal": "ประตูท่าแพ" }
+      ]
+    }
+  ]
+}
