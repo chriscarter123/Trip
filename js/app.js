@@ -1,4 +1,5 @@
 import { getCachedRate, fetchRate, isFresh } from './rates.js';
+import { createTally } from './tally.js';
 
 const QUICK_THB = [100, 500, 1000, 2000, 5000];
 
@@ -15,15 +16,15 @@ const parse = (s) => {
   const n = parseFloat(String(s).replace(/[^0-9.]/g, ''));
   return Number.isFinite(n) ? n : null;
 };
-const fmt = (n, digits) =>
-  n.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: digits });
+const fmt = (n, digits, minDigits = 0) =>
+  n.toLocaleString('en-US', { minimumFractionDigits: minDigits, maximumFractionDigits: digits });
 
 // ---- conversion ----
 function recalc() {
   if (!state.rate) return;
   if (state.lastEdited === 'thb') {
     const thb = parse(thbInput.value);
-    usdInput.value = thb == null ? '' : fmt(thb / state.rate, 2);
+    usdInput.value = thb == null ? '' : fmt(thb / state.rate, 2, 2);
   } else {
     const usd = parse(usdInput.value);
     thbInput.value = usd == null ? '' : fmt(usd * state.rate, 0);
@@ -69,9 +70,33 @@ QUICK_THB.forEach((amt) => {
   chips.appendChild(b);
 });
 
+// ---- running total ----
+const tally = createTally({
+  listEl: $('tally-list'),
+  totalEl: $('tally-total'),
+  clearBtn: $('tally-clear'),
+  fmt,
+});
+
+$('add').addEventListener('click', () => {
+  // If a dollar amount was typed, add its exact baht value (the THB box is rounded).
+  const usd = parse(usdInput.value);
+  const thb = state.lastEdited === 'usd' && usd != null && state.rate
+    ? Math.round(usd * state.rate * 100) / 100
+    : parse(thbInput.value);
+  if (tally.add(thb)) {
+    thbInput.value = '';
+    usdInput.value = '';
+    state.lastEdited = 'thb';
+  } else {
+    thbInput.focus();
+  }
+});
+
 // ---- rate display ----
 function showRate(r, { stale = false } = {}) {
   state.rate = r.rate;
+  tally.setRate(r.rate);
   rateEl.textContent = `$1 = ฿${r.rate.toFixed(2)}  ·  ฿100 = $${(100 / r.rate).toFixed(2)}`;
   const when = new Date(r.date || r.fetchedAt).toLocaleString([], {
     month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit',

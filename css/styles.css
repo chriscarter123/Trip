@@ -79,3 +79,45 @@ h1 { font-size: 1.25rem; font-weight: 600; color: var(--muted); margin: 0 0 20px
 .rate { font-size: 1rem; margin: 8px 0 4px; }
 .status { font-size: 0.85rem; color: var(--muted); margin: 0; }
 .status.stale { color: var(--warn); }
+
+.add {
+  width: 100%;
+  background: var(--accent);
+  color: var(--bg);
+  border: 0;
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.add:active { opacity: 0.8; }
+
+.tally { margin-top: 28px; }
+.tally-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.tally h2 { font-size: 1rem; color: var(--muted); margin: 0; font-weight: 600; }
+.link { background: none; border: 0; color: var(--accent); font-size: 0.9rem; padding: 4px 0; }
+
+.tally-list { list-style: none; margin: 0; padding: 0; }
+.tally-list li, .tally-total {
+  display: grid;
+  grid-template-columns: 2.5ch 1fr auto 2.5rem;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--card);
+  font-variant-numeric: tabular-nums;
+}
+.tally-list .n { color: var(--muted); font-size: 0.85rem; }
+.tally .thb { text-align: right; }
+.tally .usd { color: var(--muted); text-align: right; min-width: 6ch; }
+.del { background: none; border: 0; color: var(--muted); font-size: 1.4rem; line-height: 1; padding: 4px; }
+
+.tally-total {
+  grid-template-columns: auto 1fr auto 2.5rem;
+  border-bottom: 0;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.tally-total .usd { color: var(--accent); }
+.tally-total .empty { grid-column: 1 / -1; color: var(--muted); font-weight: 400; font-size: 0.9rem; }

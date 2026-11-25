@@ -1,12 +1,13 @@
 // Caches the app files so it opens instantly and works offline.
 // Bump VERSION whenever you change any file so phones pick up the update.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const FILES = [
   './',
   'index.html',
   'css/styles.css',
   'js/app.js',
   'js/rates.js',
+  'js/tally.js',
   'manifest.webmanifest',
   'icons/icon-192.png',
   'icons/icon-512.png',

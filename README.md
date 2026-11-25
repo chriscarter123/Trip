@@ -29,6 +29,7 @@ index.html            the page
 css/styles.css        styling
 js/app.js             UI: inputs, quick amounts, rate display
 js/rates.js           rate sources + on-device cache (add currencies/sources here)
+js/tally.js           running total: list of baht amounts saved on the device
 sw.js                 offline caching of the app files
 manifest.webmanifest  name/icon/colors used when installed
 icons/                home screen icons

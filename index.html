@@ -36,8 +36,19 @@
 
     <div class="chips" id="chips" aria-label="Quick amounts in baht"></div>
 
+    <button class="add" id="add" type="button">+ Add to total</button>
+
     <p class="rate" id="rate">Loading rate…</p>
     <p class="status" id="status"></p>
+
+    <section class="tally" aria-label="Running total">
+      <div class="tally-head">
+        <h2>Running total</h2>
+        <button class="link" id="tally-clear" type="button" hidden>Clear all</button>
+      </div>
+      <ol class="tally-list" id="tally-list"></ol>
+      <div class="tally-total" id="tally-total"></div>
+    </section>
   </main>
 
   <script type="module" src="js/app.js"></script>
