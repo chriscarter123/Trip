@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Baht</title>
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Baht">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Baht → Dollar</h1>
+
+    <section class="converter" id="converter">
+      <label class="field">
+        <span class="code">THB</span>
+        <input id="thb" type="text" inputmode="decimal" autocomplete="off" placeholder="0" aria-label="Thai baht">
+        <span class="symbol">฿</span>
+      </label>
+
+      <button class="swap" id="clear" type="button" aria-label="Clear">Clear</button>
+
+      <label class="field">
+        <span class="code">USD</span>
+        <input id="usd" type="text" inputmode="decimal" autocomplete="off" placeholder="0" aria-label="US dollars">
+        <span class="symbol">$</span>
+      </label>
+    </section>
+
+    <div class="chips" id="chips" aria-label="Quick amounts in baht"></div>
+
+    <p class="rate" id="rate">Loading rate…</p>
+    <p class="status" id="status"></p>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
