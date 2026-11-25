@@ -69,7 +69,7 @@ function renderItems(day, isToday) {
   if (!day.items?.length) return '<p class="muted">Nothing planned. Enjoy!</p>';
   // On today's page, highlight the item happening now / next.
   let nextIdx = -1;
-  const now = nowHM(trip.timezone);
+  const now = nowHM(day.timezone || trip.timezone); // a day can override, e.g. a travel day
   if (isToday) {
     nextIdx = day.items.findIndex((it, i) => {
       const nextTime = day.items[i + 1]?.time;

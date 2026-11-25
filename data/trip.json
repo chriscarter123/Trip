@@ -1,60 +1,274 @@
 {
-  "name": "Thailand (sample – replace with your trip)",
+  "name": "Phuket",
   "timezone": "Asia/Bangkok",
-
   "essentials": [
-    { "label": "Tourist Police", "value": "1155", "tel": "1155" },
-    { "label": "Ambulance / Emergency", "value": "1669", "tel": "1669" },
-    { "label": "Police", "value": "191", "tel": "191" },
-    { "label": "US Embassy Bangkok", "value": "+66 2 205 4000", "tel": "+6622054000" },
-    { "label": "Travel insurance", "value": "Policy # ABC-123 (sample)" }
+    {
+      "label": "Thai emergency",
+      "value": "191",
+      "tel": "191"
+    },
+    {
+      "label": "Tourist Police",
+      "value": "1155",
+      "tel": "1155"
+    },
+    {
+      "label": "Ambulance",
+      "value": "1669",
+      "tel": "1669"
+    },
+    {
+      "label": "Bangkok Hospital Phuket",
+      "value": "+66 76 254 425",
+      "tel": "+6676254425"
+    },
+    {
+      "label": "SafetyWing support",
+      "value": "support@safetywing.com",
+      "url": "mailto:support@safetywing.com"
+    },
+    {
+      "label": "Lub d Phuket Patong",
+      "value": "+66 76 530 100",
+      "tel": "+6676530100"
+    },
+    {
+      "label": "TRIBE Phuket Patong",
+      "value": "+66 76 681 681",
+      "tel": "+6676681681"
+    },
+    {
+      "label": "Cards",
+      "value": "Venture X for purchases · debit card for ATMs"
+    },
+    {
+      "label": "ATMs",
+      "value": "One big withdrawal · charge in baht"
+    }
   ],
-
   "days": [
     {
-      "date": "2026-12-01",
-      "title": "Arrive Bangkok",
+      "date": "2026-11-25",
+      "title": "Arrive Phuket",
       "stay": {
-        "name": "Your Bangkok hotel (sample)",
-        "address": "Sukhumvit Soi 11, Bangkok",
-        "addressLocal": "สุขุมวิท ซอย 11 กรุงเทพฯ",
-        "phone": "+66 2 000 0000",
-        "confirmation": "HTL-0001"
+        "name": "Lub d Phuket Patong",
+        "address": "5/5 Sawatdirak Rd, Patong, Kathu, Phuket 83150",
+        "addressLocal": "ลับดี ภูเก็ต ป่าตอง\n5/5 ถนนสวัสดิรักษ์ ป่าตอง กะทู้ ภูเก็ต 83150",
+        "phone": "+66 76 530 100"
       },
       "items": [
-        { "time": "14:30", "title": "Land at BKK", "place": "Suvarnabhumi Airport", "notes": "Flight XX123 · get a SIM at arrivals", "confirmation": "ABC123" },
-        { "time": "16:30", "title": "Check in", "place": "Your Bangkok hotel (sample)" },
-        { "time": "19:00", "title": "Dinner", "place": "Terminal 21 Pier 21 food court", "notes": "Cheap, easy first night" }
+        {
+          "time": "08:25",
+          "title": "CX787 Hong Kong → Phuket",
+          "notes": "Departs 08:25 Hong Kong time, gate 12. Have the arrival card QR ready."
+        },
+        {
+          "time": "11:20",
+          "title": "Land at HKT",
+          "place": "Phuket International Airport",
+          "placeLocal": "ท่าอากาศยานภูเก็ต",
+          "notes": "Immigration: passport + arrival card QR"
+        },
+        {
+          "time": "12:00",
+          "title": "ATM in arrivals hall",
+          "notes": "One large withdrawal, charged in baht, decline dollar conversion"
+        },
+        {
+          "time": "12:15",
+          "title": "Taxi to Lub d",
+          "place": "5/5 Sawatdirak Rd, Patong",
+          "placeLocal": "ลับดี ภูเก็ต ป่าตอง\n5/5 ถนนสวัสดิรักษ์ ป่าตอง กะทู้ ภูเก็ต",
+          "notes": "~฿800 limo counter or ~฿600 metered counter · 50–60 min"
+        },
+        {
+          "time": "13:15",
+          "title": "Drop bags · lunch at hotel",
+          "notes": "15% off food and drinks with direct booking"
+        },
+        {
+          "time": "14:00",
+          "title": "Check in · shower · short nap",
+          "notes": "Nap 90 min max"
+        },
+        {
+          "time": "16:30",
+          "title": "Patong Beach",
+          "place": "Patong Beach, Phuket",
+          "placeLocal": "หาดป่าตอง",
+          "notes": "5 min walk west on Sawatdirak Rd · sunset a little after 18:00"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner: Banzaan Fresh Market stalls",
+          "place": "Banzaan Fresh Market, Patong",
+          "placeLocal": "ตลาดบันซาน ป่าตอง",
+          "notes": "~15 min walk"
+        },
+        {
+          "time": "21:00",
+          "title": "Bangla Road (optional)",
+          "place": "Bangla Road, Patong",
+          "placeLocal": "ถนนบางลา ป่าตอง",
+          "notes": "~10 min walk south · or an early night"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Patong",
+      "stay": {
+        "name": "Lub d Phuket Patong",
+        "address": "5/5 Sawatdirak Rd, Patong, Kathu, Phuket 83150",
+        "addressLocal": "ลับดี ภูเก็ต ป่าตอง\n5/5 ถนนสวัสดิรักษ์ ป่าตอง กะทู้ ภูเก็ต 83150",
+        "phone": "+66 76 530 100"
+      },
+      "items": [
+        {
+          "title": "Free day",
+          "notes": "Booking includes one free laundry load"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "title": "Move to TRIBE",
+      "stay": {
+        "name": "TRIBE Phuket Patong by Accor",
+        "address": "203/2 Phang Mueang Sai Kor Rd, Patong, Kathu, Phuket",
+        "addressLocal": "TRIBE Phuket Patong\n203/2 ถนนผังเมืองสาย ก ป่าตอง กะทู้ ภูเก็ต",
+        "phone": "+66 76 681 681"
+      },
+      "items": [
+        {
+          "time": "12:00",
+          "title": "Check out of Lub d",
+          "notes": "Checkout by noon"
+        },
+        {
+          "time": "12:15",
+          "title": "Taxi to TRIBE",
+          "place": "TRIBE Phuket Patong",
+          "placeLocal": "203/2 ถนนผังเมืองสาย ก ป่าตอง กะทู้ ภูเก็ต",
+          "notes": "Short ride within Patong · leave bags if room isn't ready"
+        },
+        {
+          "time": "15:00",
+          "title": "Check in at TRIBE",
+          "notes": "King Room, 5 nights, paid · breakfast buffet ~฿647 if wanted · ask for late checkout on Dec 2 (10:55 PM flight)"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "title": "Patong",
+      "stay": {
+        "name": "TRIBE Phuket Patong by Accor",
+        "address": "203/2 Phang Mueang Sai Kor Rd, Patong, Kathu, Phuket",
+        "addressLocal": "TRIBE Phuket Patong\n203/2 ถนนผังเมืองสาย ก ป่าตอง กะทู้ ภูเก็ต",
+        "phone": "+66 76 681 681"
+      },
+      "items": [
+        {
+          "title": "Free day"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "title": "Patong",
+      "stay": {
+        "name": "TRIBE Phuket Patong by Accor",
+        "address": "203/2 Phang Mueang Sai Kor Rd, Patong, Kathu, Phuket",
+        "addressLocal": "TRIBE Phuket Patong\n203/2 ถนนผังเมืองสาย ก ป่าตอง กะทู้ ภูเก็ต",
+        "phone": "+66 76 681 681"
+      },
+      "items": [
+        {
+          "title": "Free day"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "title": "Patong",
+      "stay": {
+        "name": "TRIBE Phuket Patong by Accor",
+        "address": "203/2 Phang Mueang Sai Kor Rd, Patong, Kathu, Phuket",
+        "addressLocal": "TRIBE Phuket Patong\n203/2 ถนนผังเมืองสาย ก ป่าตอง กะทู้ ภูเก็ต",
+        "phone": "+66 76 681 681"
+      },
+      "items": [
+        {
+          "title": "Free day"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "title": "Patong",
+      "stay": {
+        "name": "TRIBE Phuket Patong by Accor",
+        "address": "203/2 Phang Mueang Sai Kor Rd, Patong, Kathu, Phuket",
+        "addressLocal": "TRIBE Phuket Patong\n203/2 ถนนผังเมืองสาย ก ป่าตอง กะทู้ ภูเก็ต",
+        "phone": "+66 76 681 681"
+      },
+      "items": [
+        {
+          "title": "Free day",
+          "notes": "Last full day · confirm late checkout for tomorrow"
+        }
       ]
     },
     {
       "date": "2026-12-02",
-      "title": "Old City",
-      "stay": {
-        "name": "Your Bangkok hotel (sample)",
-        "address": "Sukhumvit Soi 11, Bangkok",
-        "addressLocal": "สุขุมวิท ซอย 11 กรุงเทพฯ"
-      },
+      "title": "Fly home",
       "items": [
-        { "time": "08:30", "title": "Grand Palace", "place": "Grand Palace, Bangkok", "placeLocal": "พระบรมมหาราชวัง", "notes": "Shoulders and knees covered" },
-        { "time": "11:30", "title": "Wat Pho", "place": "Wat Pho, Bangkok", "placeLocal": "วัดโพธิ์" },
-        { "time": "13:00", "title": "Ferry to Wat Arun", "place": "Tha Tien Pier" },
-        { "time": "18:30", "title": "Chinatown street food", "place": "Yaowarat Road, Bangkok", "placeLocal": "ถนนเยาวราช" }
+        {
+          "time": "12:00",
+          "title": "Check out of TRIBE",
+          "notes": "Unless late checkout was granted · store bags at the desk"
+        },
+        {
+          "time": "19:30",
+          "title": "Leave for airport",
+          "place": "Phuket International Airport",
+          "placeLocal": "ท่าอากาศยานภูเก็ต",
+          "notes": "Suggested time: ~1 hr drive, international check-in. Hotel shuttle ฿1,650 or taxi."
+        },
+        {
+          "time": "22:55",
+          "title": "DL7937 Phuket → Seoul (ICN)",
+          "notes": "Operated by Korean Air · arrives 06:40 Seoul time · Main Basic: check bag allowance on delta.com"
+        }
       ]
     },
     {
       "date": "2026-12-03",
-      "title": "Fly to Chiang Mai",
-      "stay": {
-        "name": "Your Chiang Mai hotel (sample)",
-        "address": "Nimmanhaemin Rd, Chiang Mai",
-        "addressLocal": "ถนนนิมมานเหมินท์ เชียงใหม่",
-        "confirmation": "HTL-0002"
-      },
+      "title": "Seoul → Detroit → Philly",
+      "timezone": "America/New_York",
       "items": [
-        { "time": "09:00", "title": "Leave for airport", "place": "Don Mueang Airport", "notes": "Allow ~1h in traffic" },
-        { "time": "11:15", "title": "Flight DMK → CNX", "notes": "Flight XX456", "confirmation": "DEF456" },
-        { "time": "17:00", "title": "Old City evening walk", "place": "Tha Phae Gate, Chiang Mai", "placeLocal": "ประตูท่าแพ" }
+        {
+          "title": "06:40 Seoul: land at ICN",
+          "notes": "Connect to DL 158"
+        },
+        {
+          "title": "09:35 Seoul: DL 158 ICN → Detroit",
+          "notes": "Arrives 08:36 Detroit time"
+        },
+        {
+          "time": "08:36",
+          "title": "Land in Detroit",
+          "notes": "US customs here · tight 1h24 connection"
+        },
+        {
+          "time": "10:00",
+          "title": "DL2331 Detroit → Philadelphia"
+        },
+        {
+          "time": "11:37",
+          "title": "Land at PHL · home"
+        }
       ]
     }
   ]
